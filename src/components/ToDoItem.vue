@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <h2>I'm a todo item</h2> -->
-    <h2>{{ todo.name }}</h2>
+    <h2 :class="{ completed: todo.complete }">{{ todo.name }}</h2>
     <button @click="handleClick">Mark Completed</button>
   </div>
 </template>
@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style>
+.completed {
+  text-decoration: line-through;
+}
 </style>
