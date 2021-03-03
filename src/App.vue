@@ -1,11 +1,18 @@
 <template>
   <div id="app">
     <h1>Hello World</h1>
+    <todoList />
   </div>
 </template>
 
 <script>
-export default {};
+import todoList from "./components/ToDoList";
+
+export default {
+  components: {
+    todoList,
+  },
+};
 </script>
 
 <style>
